@@ -1,7 +1,7 @@
 import { StatusBar } from 'expo-status-bar';
 import React, { Component } from 'react';
 import { Button, StyleSheet, Text, View } from 'react-native';
-import { StackNavigator } from 'react-navigation';
+import { createStackNavigator } from 'react-navigation-stack';
 import { StageOne } from './src/component/stage_one';
 
 class App extends Component {
@@ -43,12 +43,16 @@ const styles = StyleSheet.create({
   },
 });
 
-export default StackNavigator({
-  Home: {
-    screen: App 
-  },
+// const AppNavigator = createStackNavigator({
+//   Home: { screen: App },
+//   screen1: { screen: StageOne }
+// });
 
-  StageOne: {
+export default createStackNavigator({
+  Home:{
+    screen: App
+  },
+  screen1: { 
     screen: StageOne
   }
-})
+});
