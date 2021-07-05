@@ -1,38 +1,29 @@
+import 'react-native-gesture-handler';
 import { StatusBar } from 'expo-status-bar';
 import React, { Component } from 'react';
 import { Button, StyleSheet, Text, View } from 'react-native';
 import { createStackNavigator } from 'react-navigation-stack';
+import { NavigationContainer } from '@react-navigation/native';
+import { createStackNavigator } from '@react-navigation/stack';
+
 import { StageOne } from './src/component/stage_one';
 
-class App extends Component {
-  static navigationOptions = {
-    title: 'Home',
-    headerStyle: {
-      backgroundColor: '#373142'
-    },
-    headerTitleStyle: {
-      color: '#FFF'
-    }
-  };
+const Stack = createStackNavigator();
 
-  stageOne = () => {
-    this.props.navigation.navigate('StageOne');
-  };
-
- render() {
-   return (
-     <View style={styles.container}>
-       <Text>Hello!</Text>
-
-       <Button
-        onPress={this.stageOne}
-        title="Got ot Stage one"
-       />
-     </View>
-   );
- }
-  
-}
+const MyStack = () => {
+  return (
+    <NavigationContainer>
+      <Stack.Navigator>
+        <Stack.Screen
+          name="Home"
+          component={HomeScreen}
+          options={{ title: 'Welcome' }}
+        />
+        <Stack.Screen name="Profile" component={ProfileScreen} />
+      </Stack.Navigator>
+    </NavigationContainer>
+  );
+};
 
 const styles = StyleSheet.create({
   container: {
@@ -49,7 +40,7 @@ const styles = StyleSheet.create({
 // });
 
 export default createStackNavigator({
-  Home:{
+  Home: {
     screen: App
   },
   screen1: { 
