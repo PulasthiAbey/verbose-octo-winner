@@ -1,16 +1,12 @@
-import React, { Component } from 'react';
-import { View, Text, StyleSheet, Button } from 'react-native';
+import React, { Component } from 'react'
+import { StyleSheet } from 'react-native';
 
-export default class stage_one extends Component {
-
-    render() {
-        return (
+const stage_03 = () => {
+    return (
            <View style={styles.container}>
-               <Text>Hello Stage Three</Text>
-               
+               <Text>Hello Stage three</Text>
            </View>
         )
-    }
 }
 
 const styles = StyleSheet.create({
@@ -21,3 +17,5 @@ const styles = StyleSheet.create({
     justifyContent: 'center',
   },
 });
+
+export default stage_03

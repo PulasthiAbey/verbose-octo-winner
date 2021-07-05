@@ -2,11 +2,7 @@ import React, { Component } from 'react';
 import { View, Text, StyleSheet, Button } from 'react-native';
 
 export default class stage_one extends Component {
-
-s
-
-
-    render() {
+ render() {
         return (
            <View style={styles.container}>
                <Text>Hello Stage One</Text>
