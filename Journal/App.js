@@ -1,6 +1,6 @@
 import { StatusBar } from 'expo-status-bar';
 import React from 'react';
-import { StyleSheet, Text, View } from 'react-native';
+import { Button, StyleSheet, Text, View } from 'react-native';
 import { StackNavigator } from 'react-navigation';
 import { StageOne } from './src/component/stage_one';
 
@@ -15,10 +15,19 @@ class App extends component {
     }
   };
 
+  stageOne = () => {
+
+  }
+
  render() {
    return (
      <View style={styles.container}>
        <Text>Hello!</Text>
+
+       <Button
+        onPress={this.stageOne}
+        title="Got ot Stage one"
+       />
      </View>
    );
  }
@@ -38,7 +47,7 @@ export default StackNavigator({
   Home: {
     screen: App 
   },
-  
+
   StageOne: {
     screen: StageOne
   }
