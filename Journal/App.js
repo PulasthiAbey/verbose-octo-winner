@@ -16,8 +16,8 @@ class App extends component {
   };
 
   stageOne = () => {
-
-  }
+    this.props.navigation.navigate('StageOne');
+  };
 
  render() {
    return (

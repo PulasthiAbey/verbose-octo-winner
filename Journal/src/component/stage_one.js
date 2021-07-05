@@ -2,6 +2,17 @@ import React, { Component } from 'react';
 import { View, Text } from 'react-native';
 
 export default class stage_one extends Component {
+
+    static navigationOptions = {
+    title: 'Home',
+    headerStyle: {
+      backgroundColor: '#373142'
+    },
+    headerTitleStyle: {
+      color: '#FFF'
+    }
+  };
+
     render() {
         return (
            <View style={styles.container}>
