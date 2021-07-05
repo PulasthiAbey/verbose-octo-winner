@@ -4,6 +4,16 @@ import { StyleSheet, Text, View } from 'react-native';
 import { StackNavigator } from 'react-navigation';
 
 class App extends component {
+  static navigationOptions = {
+    title: 'Home',
+    headerStyle: {
+      backgroundColor: '#373142'
+    },
+    headerTitleStyle: {
+      color: '#FFF'
+    }
+  };
+  
  render() {
    return (
      <View style={styles.container}>
