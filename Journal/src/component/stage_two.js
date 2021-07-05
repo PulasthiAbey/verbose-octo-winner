@@ -18,3 +18,6 @@ const styles = StyleSheet.create({
   },
 });
 
+export default stage_two
+
+
