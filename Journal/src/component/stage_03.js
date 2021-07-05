@@ -6,7 +6,8 @@ export default class stage_one extends Component {
     render() {
         return (
            <View style={styles.container}>
-               <Text>Hello Stage Two</Text>
+               <Text>Hello Stage Three</Text>
+               
            </View>
         )
     }

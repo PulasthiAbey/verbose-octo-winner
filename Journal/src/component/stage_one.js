@@ -3,15 +3,8 @@ import { View, Text, StyleSheet, Button } from 'react-native';
 
 export default class stage_one extends Component {
 
-static navigationOptions = {
-    title: 'Stage One',
-    headerStyle: {
-      backgroundColor: '#373142'
-    },
-    headerTitleStyle: {
-      color: '#FFF'
-    }
-  };
+s
+
 
     render() {
         return (
@@ -22,6 +15,12 @@ static navigationOptions = {
                     () => navigation.navigate('StageTwo')
                  }
                  title = "Got to Stage Two"
+               />
+               <Button 
+                onPress = { 
+                    () => navigation.navigate('StageThree')
+                 }
+                 title = "Got to Stage Three"
                />
            </View>
         )

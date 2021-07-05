@@ -6,6 +6,7 @@ import { createStackNavigator } from '@react-navigation/stack';
 
 import HomeScreen from './src/component/stage_one';
 import StageTwo from './src/component/stage_two';
+import StageThree from './src/component/stage_03';
 
 
 
@@ -18,7 +19,7 @@ const MyStack = () => {
         <Stack.Screen
           name="Home"
           component={HomeScreen}
-          options={{ title: 'Welcome' }}
+          options={{ title: 'Home' }}
         />
         <Stack.Screen name="StageTwo" component={StageTwo} />
       </Stack.Navigator>
