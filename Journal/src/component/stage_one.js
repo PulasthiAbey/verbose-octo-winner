@@ -3,8 +3,8 @@ import { View, Text } from 'react-native';
 
 export default class stage_one extends Component {
 
-    static navigationOptions = {
-    title: 'Home',
+static navigationOptions = {
+    title: 'Stage One',
     headerStyle: {
       backgroundColor: '#373142'
     },
