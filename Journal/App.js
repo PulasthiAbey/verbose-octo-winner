@@ -1,10 +1,10 @@
 import { StatusBar } from 'expo-status-bar';
-import React from 'react';
+import React, { Component } from 'react';
 import { Button, StyleSheet, Text, View } from 'react-native';
 import { StackNavigator } from 'react-navigation';
 import { StageOne } from './src/component/stage_one';
 
-class App extends component {
+class App extends Component {
   static navigationOptions = {
     title: 'Home',
     headerStyle: {
