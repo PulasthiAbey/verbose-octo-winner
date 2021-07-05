@@ -1,7 +1,7 @@
 import React, { Component } from 'react';
 import { StyleSheet } from 'react-native';
 
-const stage_two = () => {
+const stage_two = ({navigation}) => {
     return (
        <View style={styles.container}>
                <Text>Hello Stage Two</Text>
