@@ -16,13 +16,7 @@ static navigationOptions = {
     render() {
         return (
            <View style={styles.container}>
-               <Text>Hello Stage One</Text>
-               <Button 
-                onPress = { 
-                    () => console.log("Clicked")
-                 }
-                 title = "Got to Stage Two"
-               />
+               <Text>Hello Stage Two</Text>
            </View>
         )
     }
