@@ -2,6 +2,7 @@ import { StatusBar } from 'expo-status-bar';
 import React from 'react';
 import { StyleSheet, Text, View } from 'react-native';
 import { StackNavigator } from 'react-navigation';
+import { StageOne } from './src/component/stage_one';
 
 class App extends component {
   static navigationOptions = {
@@ -13,7 +14,7 @@ class App extends component {
       color: '#FFF'
     }
   };
-  
+
  render() {
    return (
      <View style={styles.container}>
@@ -36,5 +37,9 @@ const styles = StyleSheet.create({
 export default StackNavigator({
   Home: {
     screen: App 
+  },
+  
+  StageOne: {
+    screen: StageOne
   }
 })
