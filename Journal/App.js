@@ -1,12 +1,12 @@
 import 'react-native-gesture-handler';
-import { StatusBar } from 'expo-status-bar';
-import React, { Component } from 'react';
-import { Button, StyleSheet, Text, View } from 'react-native';
+import React from 'react';
 import { createStackNavigator } from 'react-navigation-stack';
 import { NavigationContainer } from '@react-navigation/native';
 import { createStackNavigator } from '@react-navigation/stack';
 
-import { StageOne } from './src/component/stage_one';
+import HomeScreen from './src/component/stage_one';
+
+
 
 const Stack = createStackNavigator();
 
@@ -25,25 +25,4 @@ const MyStack = () => {
   );
 };
 
-const styles = StyleSheet.create({
-  container: {
-    flex: 1,
-    backgroundColor: '#fff',
-    alignItems: 'center',
-    justifyContent: 'center',
-  },
-});
-
-// const AppNavigator = createStackNavigator({
-//   Home: { screen: App },
-//   screen1: { screen: StageOne }
-// });
-
-export default createStackNavigator({
-  Home: {
-    screen: App
-  },
-  screen1: { 
-    screen: StageOne
-  }
-});
+export default MyStack
