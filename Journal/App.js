@@ -22,6 +22,7 @@ const MyStack = () => {
           options={{ title: 'Home' }}
         />
         <Stack.Screen name="StageTwo" component={StageTwo} />
+        <Stack.Screen name="StageThree" component={StageThree} />
       </Stack.Navigator>
     </NavigationContainer>
   );
