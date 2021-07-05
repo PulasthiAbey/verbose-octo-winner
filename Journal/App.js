@@ -5,6 +5,7 @@ import { NavigationContainer } from '@react-navigation/native';
 import { createStackNavigator } from '@react-navigation/stack';
 
 import HomeScreen from './src/component/stage_one';
+import StageTwo from './src/component/stage_two';
 
 
 
@@ -19,7 +20,7 @@ const MyStack = () => {
           component={HomeScreen}
           options={{ title: 'Welcome' }}
         />
-        <Stack.Screen name="Profile" component={ProfileScreen} />
+        <Stack.Screen name="StageTwo" component={StageTwo} />
       </Stack.Navigator>
     </NavigationContainer>
   );

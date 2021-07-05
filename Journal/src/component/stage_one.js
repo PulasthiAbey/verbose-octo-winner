@@ -19,7 +19,7 @@ static navigationOptions = {
                <Text>Hello Stage One</Text>
                <Button 
                 onPress = { 
-                    () => console.log("Clicked")
+                    () => navigation.navigate('StageTwo')
                  }
                  title = "Got to Stage Two"
                />
